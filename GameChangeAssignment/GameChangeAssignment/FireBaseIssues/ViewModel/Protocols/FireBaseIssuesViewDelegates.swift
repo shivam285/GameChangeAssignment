@@ -1,0 +1,18 @@
+//
+//  FireBaseIssuesViewDelegates.swift
+//  GameChangeAssignment
+//
+//  Created by shivam.seth on 11/08/19.
+//  Copyright © 2019 shivam.seth. All rights reserved.
+//
+
+import Foundation
+
+protocol FireBaseIssuesViewModelDelegate:class {
+ 
+    func fireBaseIssuesViewModel(_ viewModel:FireBaseIssuesViewModel, successfullyFetchedIssues itemViewModels: [FireBaseIssueItemViewModel])
+    
+    func fireBaseIssuesViewModel(_ viewModel:FireBaseIssuesViewModel, failedToFetchIssues error: Error)
+
+    
+}
